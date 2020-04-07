@@ -1,7 +1,97 @@
 fileFormatVersion: 2
 guid: 14fbea98f0fed4b418971a3ba2657b47
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 905145108452490443
+    second: Walk (14)_0
+  - first:
+      213: 7193016186339350413
+    second: Walk (14)_1
+  - first:
+      213: 7756213847115388948
+    second: Walk (14)_2
+  - first:
+      213: -4137277137806637971
+    second: Walk (14)_3
+  - first:
+      213: 6305363287801266412
+    second: Walk (14)_4
+  - first:
+      213: 46576110339390781
+    second: Walk (14)_5
+  - first:
+      213: 7628727505836993799
+    second: Walk (14)_6
+  - first:
+      213: 5277357208420235261
+    second: Walk (14)_7
+  - first:
+      213: 3598630257982716135
+    second: Walk (14)_8
+  - first:
+      213: 83699380556175881
+    second: Walk (14)_9
+  - first:
+      213: 6409976113851079502
+    second: Walk (14)_10
+  - first:
+      213: -5823576082135423022
+    second: Walk (14)_11
+  - first:
+      213: 7873743768061694075
+    second: Walk (14)_12
+  - first:
+      213: 4632434319293222969
+    second: Walk (14)_13
+  - first:
+      213: -9070089640890880466
+    second: Walk (14)_14
+  - first:
+      213: 6666217883951011489
+    second: Walk (14)_15
+  - first:
+      213: -5120534319727997275
+    second: Walk (14)_16
+  - first:
+      213: -9212810755583500526
+    second: Walk (14)_17
+  - first:
+      213: 5818527407999267745
+    second: Walk (14)_18
+  - first:
+      213: -375883046674635172
+    second: Walk (14)_19
+  - first:
+      213: -1722734699383631214
+    second: Walk (14)_20
+  - first:
+      213: -4881499023583877846
+    second: Walk (14)_21
+  - first:
+      213: -6475890995377084836
+    second: Walk (14)_22
+  - first:
+      213: 3033278194589725443
+    second: Walk (14)_23
+  - first:
+      213: -8213260013877024435
+    second: Walk (14)_24
+  - first:
+      213: 7228271383878784906
+    second: Walk (14)_25
+  - first:
+      213: -3451233810951416572
+    second: Walk (14)_26
+  - first:
+      213: -6669281920638731830
+    second: Walk (14)_27
+  - first:
+      213: -6123238512058203697
+    second: Walk (14)_28
+  - first:
+      213: -6485655600284693468
+    second: Walk (14)_29
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +130,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -70,9 +160,78 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Walk (14)_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 66
+        width: 285
+        height: 471
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d9d47a795dbce43827a1c035560a64
+      internalID: 905145108452490443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

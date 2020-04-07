@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 9feed9e1299df7e4a97707ab9048374f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7733061879136780480
+    second: Dead (1)_0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,17 +43,17 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
-  spriteExtrude: 0
+  spriteMode: 2
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 7
   spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 70, y: 62, z: 221, w: 93}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -120,9 +123,44 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Dead (1)_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 62
+        width: 318
+        height: 408
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ebe6ddd2112f04da4bdb53671b216d
+      internalID: 7733061879136780480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
-    physicsShape: []
+    physicsShape:
+    - - {x: -179, y: 188}
+      - {x: -233, y: 97}
+      - {x: -233, y: -199}
+      - {x: -229, y: -221}
+      - {x: -129, y: -221}
+      - {x: 85, y: -34}
+      - {x: 85, y: 162}
+      - {x: 73, y: 188}
+    - - {x: -178, y: -201}
+      - {x: -183, y: -196}
+      - {x: -180, y: -192}
+      - {x: -173, y: -182}
+      - {x: -179, y: -199}
+      - {x: -178, y: -202}
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
