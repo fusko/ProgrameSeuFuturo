@@ -5,77 +5,33 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour
 {
-    private Rigidbody2D m_rigidbody;
-    [SerializeField]
-    private float forwardSpeed;
-    [SerializeField]
-    private float maxSpeed;
-    private Vector2 direction;
-    [SerializeField]
-    private Animator m_animator;
-    [SerializeField]
-    private bool walking;
-    private bool facingRight;
-    [SerializeField]
-    private float gravity;
+    public float speed;                //Floating point variable to store the player's movement speed.
 
+    private Rigidbody2D rb2d;        //Store a reference to the Rigidbody2D component required to use 2D Physics.
+
+    public float gravity;
+    // Use this for initialization
     void Start()
     {
-        Input.simulateMouseWithTouches = true;
-        m_rigidbody = GetComponent<Rigidbody2D>();
-        m_animator = GetComponent<Animator>();
-
+        //Get and store a reference to the Rigidbody2D component so that we can access it.
+        rb2d = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    //FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
+    void FixedUpdate()
     {
-        
-            print("yes");
-            float horizontal = Input.GetAxis("Horizontal");
+        //Store the current horizontal input in the float moveHorizontal.
+        float moveHorizontal = Input.GetAxis("Horizontal");
 
-        walking = Mathf.Abs(horizontal) != 0 ? true : false;
+        //Store the current vertical input in the float moveVertical.
 
-            direction.Set(horizontal, gravity);
+        float moveVertical =0;
 
-            direction.Normalize();
+        //Use the two store floats to create a new Vector2 variable movement.
+        Vector2 movement = new Vector2(moveHorizontal, moveVertical);
 
-            Flip(horizontal);
-        
+        print(movement);
+        //Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
+        rb2d.AddForce  (movement * speed);
     }
-
-    private void FixedUpdate()
-    {
-
-        m_animator.SetBool("walk", walking);
-        m_rigidbody.velocity=(direction * forwardSpeed * Time.deltaTime);
-
-    }
-
-    private void Flip(float horizontal)
-    {
-        if (horizontal < 0 && !facingRight || horizontal >0 && facingRight)
-        {
-            facingRight = !facingRight;
-            Vector3 theScale = transform.localScale;
-            theScale.x *= -1;
-            transform.localScale = theScale;
-        }
-    }
-
-
-    private float HandleInput()
-    {
-        if (Input.touchCount > 0)
-        {
-            float touch;
-            touch = Input.GetTouch(0).position.x;
-            return touch > Screen.width / 2 ? 1 : -1;
-    }
-    else
-    {
-
-            return Input.GetAxis("Horizontal");
-    }
-    }
-
 }
